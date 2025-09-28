@@ -41,23 +41,22 @@ const fonts = {
 };
 
 const style = {
-  theme: "system", // dark | light | system
-  neutral: "gray", // sand | gray | slate | custom
-  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
-  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  theme: "dark", // dark | light
+  neutral: "gray", // sand | gray | slate
+  brand: "blue", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "indigo", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
   border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
-  scaling: "90", // 90 | 95 | 100 | 105 | 110
+  scaling: "100"
 };
-
 
 const dataStyle = {
   variant: "gradient", // flat | gradient | outline
   mode: "categorical", // categorical | divergent | sequential
-  height: 12, // default chart height
+  height: 24, // default chart height
   axis: {
     stroke: "var(--neutral-alpha-weak)",
   },
@@ -100,35 +99,30 @@ const effects = {
   },
   gradient: {
     display: false,
-    opacity: 100,
     x: 50,
-    y: 60,
-    width: 50,
-    height: 50,
+    y: 0,
+    width: 100,
+    height: 100,
     tilt: 0,
-    colorStart: "accent-background-strong",
-    colorEnd: "page-background",
+    colorStart: "brand-background-strong",
+    colorEnd: "static-transparent",
+    opacity: 50,
   },
   dots: {
-    display: true,
-    opacity: 40,
-    size: "2",
-    color: "brand-background-strong",
+    display: false,
+    size: 2,
+    color: "brand-on-background-weak",
+    opacity: 20,
   },
   lines: {
     display: false,
-    opacity: 100,
     color: "neutral-alpha-weak",
-    size: "16",
-    thickness: 1,
-    angle: 45,
+    opacity: 100,
   },
   grid: {
     display: false,
+    color: "neutral-alpha-weak",
     opacity: 100,
-    color: "neutral-alpha-medium",
-    width: "0.25rem",
-    height: "0.25rem",
   },
 };
 
