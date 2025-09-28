@@ -40,7 +40,7 @@ const fonts = {
   code: code,
 };
 
-const style: StyleConfig = {
+const style = {
   theme: "system", // dark | light | system
   neutral: "gray", // sand | gray | slate | custom
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
