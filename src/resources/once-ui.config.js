@@ -103,7 +103,7 @@ const effects = {
     opacity: 100,
     x: 50,
     y: 60,
-    width: 100,
+    width: 50,
     height: 50,
     tilt: 0,
     colorStart: "accent-background-strong",
