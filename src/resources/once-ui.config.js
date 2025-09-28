@@ -40,18 +40,19 @@ const fonts = {
   code: code,
 };
 
-const style = {
-  theme: "dark", // dark | light
-  neutral: "gray", // sand | gray | slate
-  brand: "blue", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "indigo", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+const style: StyleConfig = {
+  theme: "system", // dark | light | system
+  neutral: "gray", // sand | gray | slate | custom
+  brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
+  accent: "red", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan | custom
   solid: "contrast", // color | contrast
   solidStyle: "flat", // flat | plastic
   border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
-  scaling: "100"
+  scaling: "100", // 90 | 95 | 100 | 105 | 110
 };
+
 
 const dataStyle = {
   variant: "gradient", // flat | gradient | outline
@@ -99,30 +100,35 @@ const effects = {
   },
   gradient: {
     display: false,
+    opacity: 100,
     x: 50,
-    y: 0,
+    y: 60,
     width: 100,
-    height: 100,
+    height: 50,
     tilt: 0,
-    colorStart: "brand-background-strong",
-    colorEnd: "static-transparent",
-    opacity: 50,
+    colorStart: "accent-background-strong",
+    colorEnd: "page-background",
   },
   dots: {
-    display: false,
-    size: 2,
-    color: "brand-on-background-weak",
-    opacity: 20,
+    display: true,
+    opacity: 40,
+    size: "2",
+    color: "brand-background-strong",
   },
   lines: {
     display: false,
-    color: "neutral-alpha-weak",
     opacity: 100,
+    color: "neutral-alpha-weak",
+    size: "16",
+    thickness: 1,
+    angle: 45,
   },
   grid: {
     display: false,
-    color: "neutral-alpha-weak",
     opacity: 100,
+    color: "neutral-alpha-medium",
+    width: "0.25rem",
+    height: "0.25rem",
   },
 };
 
