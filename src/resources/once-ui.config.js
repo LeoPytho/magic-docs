@@ -57,7 +57,7 @@ const style = {
 const dataStyle = {
   variant: "gradient", // flat | gradient | outline
   mode: "categorical", // categorical | divergent | sequential
-  height: 24, // default chart height
+  height: 12, // default chart height
   axis: {
     stroke: "var(--neutral-alpha-weak)",
   },
